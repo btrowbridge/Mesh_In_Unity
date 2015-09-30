@@ -1,0 +1,33 @@
+﻿#pragma strict
+
+
+DataShell{
+	name : ,
+	sensors:{
+		compass:,
+		magnetometer:{
+			x:,
+			y:,
+			z:,
+			
+		},
+		barrometer:{
+			pressure:,
+			temperature:,
+		},
+		gps{
+			latitude:{
+				degrees:,
+				minutes:,
+				direction:
+			},
+			longitude:{
+				degrees:,
+				minutes:,
+				direction:
+			}
+		},
+	
+	},
+	timestamp:
+}

@@ -48,6 +48,9 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\MongoDBServer.cs" />
      <Compile Include="Assets\Scripts\Node.cs" />
+     <None Include="Assets\CSharpDriver-1.7.0.4714\License.txt" />
+     <None Include="Assets\CSharpDriver-1.7.0.4714\MongoDB.Bson.xml" />
+     <None Include="Assets\CSharpDriver-1.7.0.4714\Release Notes v1.7.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -56,6 +59,12 @@
  </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="MongoDB.Driver">
+ <HintPath>C:/Users/Bradley Trowbridge/Desktop/Unity Project/Mesh_Network_In_Unity/Assets/CSharpDriver-1.7.0.4714/MongoDB.Driver.dll</HintPath>
+ </Reference>
+ <Reference Include="MongoDB.Bson">
+ <HintPath>C:/Users/Bradley Trowbridge/Desktop/Unity Project/Mesh_Network_In_Unity/Assets/CSharpDriver-1.7.0.4714/MongoDB.Bson.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
