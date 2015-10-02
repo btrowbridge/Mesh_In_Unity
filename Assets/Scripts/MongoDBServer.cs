@@ -27,8 +27,8 @@ public class MongoDBServer : MonoBehaviour {
 	protected static MongoClient _client;					// for use of client mode
 	protected static MongoClientSettings clientSettings; 	// for client settings in client mode
 	protected static MongoDatabase _database;				// database
-	private bool isNewNode;									//token to see if the data is a new node
 
+    public bool nodePermissionToSelfUpdate;
 	public bool isClient = false;
 	public int delay = 10;						// delay of how old you want your data (seconds?)
 	public string host = "localhost";			// string to pass for the server host
@@ -43,11 +43,11 @@ public class MongoDBServer : MonoBehaviour {
 		if (isClient) {
 
 			// Create client settings to pass connection string, timeout, etc.
-			//clientSettings = new MongoClientSettings();
-			//clientSettings.Server = new MongoServerSettings(localhost,port);
+			clientSettings = new MongoClientSettings();
+			clientSettings.Server = new MongoServerAddress(localhost,port);
 
-			//create client part
-			//_client = new MongoClient(clientSettings);
+		    //create client part
+			_client = new MongoClient(clientSettings);
 
 			//Create server object to communicate with server
 			//server = new MongoServer(clientSettings);
@@ -86,7 +86,7 @@ public class MongoDBServer : MonoBehaviour {
 
 		//for delayed timestamp
 		int timeStamp =  (int)Stopwatch.GetTimestamp();
-		string delayedTime = (timeStamp + delay).ToString (); 
+		string delayedTime = (timeStamp - delay).ToString (); 
 
 		//Query specific node name at a delayed time
 		var query = Query.And (
@@ -98,7 +98,7 @@ public class MongoDBServer : MonoBehaviour {
 		var result = collection.Find (query).ToList<BsonDocument>();
 
 
-		//parse the bson document and update the nnode data members
+		//parse the first bson document and update the node data members
 		node.pointToSensor ().parseBsonToSensorData (result[0]);
 
 	}
@@ -111,12 +111,13 @@ public class MongoDBServer : MonoBehaviour {
 	// Fixed Update is called once per per specific amount of time, this is handled in Edit > project settings> time
 	void FixedUpdate () 
 	{
-		processData (); // our main looping method
+        if(!nodePermissionToSelfUpdate)
+		    updateNodesFromServer (); // our main looping method
 	}
 
 
 	//method handling
-	void processData(){
+	void updateNodesFromServer(){
 
 		//get DB from server
 		var _database = server.GetDatabase ("sensornetwork");
@@ -125,7 +126,7 @@ public class MongoDBServer : MonoBehaviour {
 
 		//look for Bsondocument with old timestamp
 		int timeStamp = (int)Stopwatch.GetTimestamp ();
-		string delayedTime = (timeStamp + delay).ToString ();
+		string delayedTime = (timeStamp - delay).ToString ();
 
 		//query for a specific delayed time
 		var query = Query.EQ ("timestamp", delayedTime);
@@ -133,7 +134,7 @@ public class MongoDBServer : MonoBehaviour {
 		//convert results to a list of bson objects
 		var result = collection.Find (query).ToList<BsonDocument> ();
 
-
+        bool isNewNode;									//token to see if the data is a new node
 		//process each piece of data collected
 		foreach (BsonDocument data in result) {
 
@@ -153,6 +154,7 @@ public class MongoDBServer : MonoBehaviour {
 			if (isNewNode) {
 				//add it to the list
 				addNodeToList (new Node ((string)data ["name"]));
+                
 			}
 		}
 
