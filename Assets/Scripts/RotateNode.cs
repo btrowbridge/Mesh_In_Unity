@@ -30,7 +30,6 @@ public class RotateNode : MonoBehaviour
     void FixedUpdate()
     {
         float distCovered = (Time.time - startTime) * speed;
-        print(distCovered);
         float fracJourney = distCovered / journeyLength;
         transform.position = Vector3.Lerp(startMarker, endMarker, fracJourney);
         if (distCovered >= distance)
