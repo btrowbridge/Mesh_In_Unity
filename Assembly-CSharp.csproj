@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\MongoDBServer.cs" />
      <Compile Include="Assets\Scripts\Node.cs" />
+     <Compile Include="Assets\Scripts\RotateNode.cs" />
      <Compile Include="Assets\Scripts\sensorData.cs" />
      <None Include="Assets\CSharpDriver-1.7.0.4714\License.txt" />
      <None Include="Assets\CSharpDriver-1.7.0.4714\MongoDB.Bson.xml" />
