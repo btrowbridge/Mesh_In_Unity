@@ -48,24 +48,16 @@
      <Compile Include="Assets\Scripts\MongoDBServer.cs" />
      <Compile Include="Assets\Scripts\Node.cs" />
      <Compile Include="Assets\Scripts\sensorData.cs" />
-     <None Include="Assets\Breakable Glass\Shaders\SimpleGlass.shader" />
-     <None Include="Assets\Breakable Glass\README.txt" />
      <None Include="Assets\CSharpDriver-1.7.0.4714\License.txt" />
      <None Include="Assets\CSharpDriver-1.7.0.4714\MongoDB.Bson.xml" />
      <None Include="Assets\Scripts\ClassDiagram1.cd" />
      <None Include="Assets\CSharpDriver-1.7.0.4714\Release Notes v1.7.txt" />
      <None Include="Assets\Objects\Materials\Materials\Glass_VTC.shader" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="MongoDB.Bson">
  <HintPath>C:/Users/johnmccormack2307/Documents/MeshMapper/Assets/CSharpDriver-1.7.0.4714/MongoDB.Bson.dll</HintPath>
