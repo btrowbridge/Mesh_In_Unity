@@ -1,0 +1,180 @@
+fileFormatVersion: 2
+guid: 190d3cd57fe225046a07a808fc28f619
+timeCreated: 1443822338
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: '3D View: 3D View 2'
+    100002: Basic Wall Generic - 8" [311781]
+    100004: Basic Wall Generic - 8" [311786]
+    100006: Basic Wall Generic - 8" [311790]
+    100008: Basic Wall Generic - 8" [311794]
+    100010: Basic Wall Generic - 8" [311833]
+    100012: Basic Wall Generic - 8" [311837]
+    100014: Basic Wall Generic - 8" [311841]
+    100016: Basic Wall Generic - 8" [311845]
+    100018: Basic Wall Generic - 8" [311849]
+    100020: Basic Wall Generic - 8" [311853]
+    100022: Basic Wall Generic - 8" [311857]
+    100024: Basic Wall Generic - 8" [312069]
+    100026: Basic Wall Generic - 8" [312073]
+    100028: Basic Wall Generic - 8" [312081]
+    100030: Basic Wall Generic - 8" [312153]
+    100032: Basic Wall Generic - 8" [315368]
+    100034: Basic Wall Generic - 8" [316810]
+    100036: Basic Wall Generic - 8" [316961]
+    100038: Floor Generic - 12" [317094]
+    100040: System Panel Glazed [316101]
+    100042: System Panel Glazed [316366]
+    100044: //RootNode
+    400000: '3D View: 3D View 2'
+    400002: Basic Wall Generic - 8" [311781]
+    400004: Basic Wall Generic - 8" [311786]
+    400006: Basic Wall Generic - 8" [311790]
+    400008: Basic Wall Generic - 8" [311794]
+    400010: Basic Wall Generic - 8" [311833]
+    400012: Basic Wall Generic - 8" [311837]
+    400014: Basic Wall Generic - 8" [311841]
+    400016: Basic Wall Generic - 8" [311845]
+    400018: Basic Wall Generic - 8" [311849]
+    400020: Basic Wall Generic - 8" [311853]
+    400022: Basic Wall Generic - 8" [311857]
+    400024: Basic Wall Generic - 8" [312069]
+    400026: Basic Wall Generic - 8" [312073]
+    400028: Basic Wall Generic - 8" [312081]
+    400030: Basic Wall Generic - 8" [312153]
+    400032: Basic Wall Generic - 8" [315368]
+    400034: Basic Wall Generic - 8" [316810]
+    400036: Basic Wall Generic - 8" [316961]
+    400038: Floor Generic - 12" [317094]
+    400040: System Panel Glazed [316101]
+    400042: System Panel Glazed [316366]
+    400044: //RootNode
+    2300000: Basic Wall Generic - 8" [311781]
+    2300002: Basic Wall Generic - 8" [311786]
+    2300004: Basic Wall Generic - 8" [311790]
+    2300006: Basic Wall Generic - 8" [311794]
+    2300008: Basic Wall Generic - 8" [311833]
+    2300010: Basic Wall Generic - 8" [311837]
+    2300012: Basic Wall Generic - 8" [311841]
+    2300014: Basic Wall Generic - 8" [311845]
+    2300016: Basic Wall Generic - 8" [311849]
+    2300018: Basic Wall Generic - 8" [311853]
+    2300020: Basic Wall Generic - 8" [311857]
+    2300022: Basic Wall Generic - 8" [312069]
+    2300024: Basic Wall Generic - 8" [312073]
+    2300026: Basic Wall Generic - 8" [312081]
+    2300028: Basic Wall Generic - 8" [312153]
+    2300030: Basic Wall Generic - 8" [315368]
+    2300032: Basic Wall Generic - 8" [316810]
+    2300034: Basic Wall Generic - 8" [316961]
+    2300036: Floor Generic - 12" [317094]
+    2300038: System Panel Glazed [316101]
+    2300040: System Panel Glazed [316366]
+    3300000: Basic Wall Generic - 8" [311781]
+    3300002: Basic Wall Generic - 8" [311786]
+    3300004: Basic Wall Generic - 8" [311790]
+    3300006: Basic Wall Generic - 8" [311794]
+    3300008: Basic Wall Generic - 8" [311833]
+    3300010: Basic Wall Generic - 8" [311837]
+    3300012: Basic Wall Generic - 8" [311841]
+    3300014: Basic Wall Generic - 8" [311845]
+    3300016: Basic Wall Generic - 8" [311849]
+    3300018: Basic Wall Generic - 8" [311853]
+    3300020: Basic Wall Generic - 8" [311857]
+    3300022: Basic Wall Generic - 8" [312069]
+    3300024: Basic Wall Generic - 8" [312073]
+    3300026: Basic Wall Generic - 8" [312081]
+    3300028: Basic Wall Generic - 8" [312153]
+    3300030: Basic Wall Generic - 8" [315368]
+    3300032: Basic Wall Generic - 8" [316810]
+    3300034: Basic Wall Generic - 8" [316961]
+    3300036: Floor Generic - 12" [317094]
+    3300038: System Panel Glazed [316101]
+    3300040: System Panel Glazed [316366]
+    4300000: Basic Wall Generic - 8" [311781]
+    4300002: Basic Wall Generic - 8" [311786]
+    4300004: Basic Wall Generic - 8" [311790]
+    4300006: Basic Wall Generic - 8" [311794]
+    4300008: Basic Wall Generic - 8" [311833]
+    4300010: Basic Wall Generic - 8" [311837]
+    4300012: Basic Wall Generic - 8" [311841]
+    4300014: Basic Wall Generic - 8" [311845]
+    4300016: Basic Wall Generic - 8" [311849]
+    4300018: Basic Wall Generic - 8" [311853]
+    4300020: Basic Wall Generic - 8" [311857]
+    4300022: Basic Wall Generic - 8" [312069]
+    4300024: Basic Wall Generic - 8" [312073]
+    4300026: Basic Wall Generic - 8" [312081]
+    4300028: Basic Wall Generic - 8" [312153]
+    4300030: Basic Wall Generic - 8" [315368]
+    4300032: System Panel Glazed [316101]
+    4300034: System Panel Glazed [316366]
+    4300036: Basic Wall Generic - 8" [316810]
+    4300038: Basic Wall Generic - 8" [316961]
+    4300040: Floor Generic - 12" [317094]
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
