@@ -5,7 +5,7 @@ Be sure to inclode the CSharp driver located in the assets in your assembly
 
 ------------------------------------------------------------------------------
 */
-
+/*
 using UnityEngine;
 using System.Collections;
 using System;
@@ -161,7 +161,7 @@ public class MongoDBServer : MonoBehaviour {
 	}
 	
 }
-
+*/
 
 
 

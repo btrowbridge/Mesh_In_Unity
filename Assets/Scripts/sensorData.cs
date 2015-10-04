@@ -1,4 +1,5 @@
-﻿using System;
+﻿/*
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -88,7 +89,7 @@ public class sensorData
             }
             double degrees;
             double minutes;
-            string direction;
+            string directionpublic;
         }
     }
     // --------------------------------------------------
@@ -102,7 +103,8 @@ public class sensorData
 	}
 	 */
     //takes a Bsondocument, parses it and updates then sensors
-    public void parseBsonToSensorData(BsonDocument result)
+    /*
+    ; void parseBsonToSensorData(BsonDocument result)
     {
 
         compSensor = new compass(result["compass"].ToDouble());
@@ -116,3 +118,4 @@ public class sensorData
     }
 
 }
+*/

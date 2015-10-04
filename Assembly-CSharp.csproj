@@ -48,6 +48,7 @@
      <Compile Include="Assets\Scripts\DynamicTyping.cs" />
      <Compile Include="Assets\Scripts\MongoDBServer.cs" />
      <Compile Include="Assets\Scripts\Node.cs" />
+     <Compile Include="Assets\Scripts\NodeDataDisplay.cs" />
      <Compile Include="Assets\Scripts\RotateNode.cs" />
      <Compile Include="Assets\Scripts\sensorData.cs" />
      <None Include="Assets\Shaders\3DText.shader.shader" />
