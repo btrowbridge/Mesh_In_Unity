@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\Node.cs" />
      <Compile Include="Assets\Scripts\NodeDataDisplay.cs" />
      <Compile Include="Assets\Scripts\RotateNode.cs" />
+     <Compile Include="Assets\Scripts\SendDataToDisplay.cs" />
      <Compile Include="Assets\Scripts\sensorData.cs" />
      <None Include="Assets\Shaders\3DText.shader.shader" />
      <None Include="Assets\Shaders\3DTextOneSided.shader.shader" />
@@ -65,10 +66,10 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="MongoDB.Bson">
- <HintPath>C:/Users/johnmccormack2307/Documents/MeshMapper/Assets/CSharpDriver-1.7.0.4714/MongoDB.Bson.dll</HintPath>
+ <HintPath>C:/Users/Public/Documents/Unity Projects/MeshMapper/Assets/CSharpDriver-1.7.0.4714/MongoDB.Bson.dll</HintPath>
  </Reference>
  <Reference Include="MongoDB.Driver">
- <HintPath>C:/Users/johnmccormack2307/Documents/MeshMapper/Assets/CSharpDriver-1.7.0.4714/MongoDB.Driver.dll</HintPath>
+ <HintPath>C:/Users/Public/Documents/Unity Projects/MeshMapper/Assets/CSharpDriver-1.7.0.4714/MongoDB.Driver.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
