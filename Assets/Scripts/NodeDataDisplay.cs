@@ -5,8 +5,8 @@ using System.Collections.Generic;
 public class NodeDataDisplay : MonoBehaviour {
     //public GameObject TextCamera;
     // Use this for initialization
-    public bool hasCompass = true;
-	public bool hasTherm = true;
+    public bool hasCompass = false;
+	public bool hasTherm = false;
     //public bool hasMagnetometer = true;
     //public bool hasBarometer = true;
     //public bool hasGPS = true;
