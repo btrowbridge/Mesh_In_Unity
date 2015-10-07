@@ -10,19 +10,21 @@ public class NodeDataDisplay : MonoBehaviour {
     //public bool hasMagnetometer = true;
     //public bool hasBarometer = true;
     //public bool hasGPS = true;
-    public int compass = 90;
-	public int temp = 100;
+    public double compass = 90;
+	public double temp = 100;
     public Material CompassTex;
 	public Material ThermTex;
     public GameObject Logo;
 	private Material material;
-
+    private Node node;
 	public GameObject CurrentNodeObject;
 
 	private Dictionary<string, Material> Logos;
 
     void Start () {
 		Logos = new Dictionary<string,Material > ();
+        node = FindObjectOfType<Node>();
+        compass = node.pointToSensor().compSensor.orientation;
 		Logos.Add ("compass", CompassTex);
 		Logos.Add ("thermometer", ThermTex);
 

@@ -6,7 +6,7 @@
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
 	<RootNamespace></RootNamespace>
-	<ProjectGuid>{37206EF0-6F23-140B-9885-201BF1026FD5}</ProjectGuid>
+	<ProjectGuid>{D0456EBE-61FC-963C-DE5A-2676F5137F7D}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<AssemblyName>Assembly-CSharp</AssemblyName>
@@ -67,10 +67,10 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="MongoDB.Bson">
- <HintPath>C:/Users/Public/Documents/Unity Projects/MeshMapper/Assets/CSharpDriver-1.7.0.4714/MongoDB.Bson.dll</HintPath>
+ <HintPath>C:/Users/johnmccormack2307/Documents/Assets/CSharpDriver-1.7.0.4714/MongoDB.Bson.dll</HintPath>
  </Reference>
  <Reference Include="MongoDB.Driver">
- <HintPath>C:/Users/Public/Documents/Unity Projects/MeshMapper/Assets/CSharpDriver-1.7.0.4714/MongoDB.Driver.dll</HintPath>
+ <HintPath>C:/Users/johnmccormack2307/Documents/Assets/CSharpDriver-1.7.0.4714/MongoDB.Driver.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>

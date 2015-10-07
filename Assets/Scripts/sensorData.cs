@@ -1,4 +1,4 @@
-﻿/*
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,26 +11,26 @@ public class sensorData
 
     //sensor data members
 
-    private compass compSensor;
-    private magnometer magSensor;
-    private barometer barometricSensor;
-    private GPS gpsSensor;
+    public compass compSensor;
+    public magnometer magSensor;
+    public barometer barometricSensor;
+    public GPS gpsSensor;
 
     //Structs for these complex data members-------------
     //compass
 
-    [Serializable]private struct compass
+    [Serializable]public struct compass
     {
         public compass(double orientation)
         {
             this.orientation = orientation;
         }
-        double orientation;
+        public double orientation;
     }
 
     //magnetometer in each axis
     [Serializable]
-    private struct magnometer
+    public struct magnometer
     {
         public magnometer(double x, double y, double z)
         {
@@ -38,27 +38,27 @@ public class sensorData
             this.y = y;
             this.z = z;
         }
-        double x;
-        double y;
-        double z;
+        public double x;
+        public double y;
+        public double z;
     }
 
     //barometric pressure and temperature
     [Serializable]
-    private struct barometer
+    public struct barometer
     {
         public barometer(double pressure, double temperature)
         {
             this.pressure = pressure;
             this.temperature = temperature;
         }
-        double pressure;
-        double temperature;
+        public double pressure;
+        public double temperature;
     }
 
     // GPS
     [Serializable]
-    private struct GPS
+    public struct GPS
     {
         latitude lat;
         longitude lon;
@@ -75,9 +75,9 @@ public class sensorData
                 this.minutes = minutes;
                 this.direction = direction;
             }
-            double degrees;
-            double minutes;
-            string direction;
+            public double degrees;
+            public double minutes;
+            public string direction;
         }
         public struct longitude
         {
@@ -87,24 +87,15 @@ public class sensorData
                 this.minutes = minutes;
                 this.direction = direction;
             }
-            double degrees;
-            double minutes;
-            string directionpublic;
+            public double degrees;
+            public double minutes;
+            public string direction;
         }
     }
     // --------------------------------------------------
-    /*
-	 * Has acessability issues
-	public void setNewSensorData(compass orientation, magnometer magField, barometer pressure, GPS gps){
-		compSensor = orientation;
-		magSensor = magField;
-		barometricSensor = pressure;
-		gpsSensor = gps;
-	}
-	 */
-    //takes a Bsondocument, parses it and updates then sensors
-    /*
-    ; void parseBsonToSensorData(BsonDocument result)
+
+    
+    public void parseBsonToSensorData(BsonDocument result)
     {
 
         compSensor = new compass(result["compass"].ToDouble());
@@ -118,4 +109,4 @@ public class sensorData
     }
 
 }
-*/
+
