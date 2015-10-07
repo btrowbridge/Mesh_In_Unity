@@ -17,6 +17,8 @@ public class NodeDataDisplay : MonoBehaviour {
     public GameObject Logo;
 	private Material material;
 
+	public GameObject CurrentNodeObject;
+
 	private Dictionary<string, Material> Logos;
 
     void Start () {
@@ -44,5 +46,9 @@ public class NodeDataDisplay : MonoBehaviour {
 			hasTherm = false;
 		}
 
+	}
+
+	void setGameObject(GameObject newNodeObject){
+		CurrentNodeObject = newNodeObject;
 	}
 }
