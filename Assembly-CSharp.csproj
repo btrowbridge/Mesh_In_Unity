@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\MongoDBServer.cs" />
      <Compile Include="Assets\Scripts\Node.cs" />
      <Compile Include="Assets\Scripts\NodeDataDisplay.cs" />
+     <Compile Include="Assets\Scripts\OnMouseDebug.cs" />
      <Compile Include="Assets\Scripts\RotateNode.cs" />
      <Compile Include="Assets\Scripts\SendDataToDisplay.cs" />
      <Compile Include="Assets\Scripts\sensorData.cs" />

@@ -26,7 +26,7 @@ public class SendDataToDisplay : MonoBehaviour {
     void OnMouseDown()
     {
         print("Click");
-        string objectID = GetInstanceID().ToString();
+        string objectID = name;
         display.setGameObject(objectID);
     }
 

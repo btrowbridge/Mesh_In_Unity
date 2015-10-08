@@ -54,11 +54,8 @@ public class Node : MonoBehaviour
 
 	}
 	void FixedUpdate(){
-        if(myServer.nodePermissionToSelfUpdate)
+        if(myServer.nodePermissionToSelfUpdate && !myServer.noData)
 		    myServer.updateNode(this);
 	}
-
-
-
 }
 

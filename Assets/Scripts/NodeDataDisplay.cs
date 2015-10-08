@@ -51,10 +51,11 @@ public class NodeDataDisplay : MonoBehaviour {
 			//Below line for testing only, remove later
 			hasTherm = false;
 		}
-        print(CurrentNodeObject.name);
 	}
 
-	public void setGameObject(string newNodeId){
-		CurrentNodeObject = GameObject.Find(newNodeId);
+	public void setGameObject(string newNodeName){
+        print("MSG Rec");
+		CurrentNodeObject = GameObject.Find(newNodeName);
+        print(CurrentNodeObject.name.ToString());
 	}
 }
