@@ -19,6 +19,10 @@ public class NodeDataDisplay : MonoBehaviour {
     private Node node;
 	public GameObject CurrentNodeObject;
 
+    // cycle will count upwards until reaching the last
+    // sensor and then reset to 0. 
+    private int cycle; 
+
 	private Dictionary<string, Material> Logos;
 
     void Start () {
@@ -47,10 +51,10 @@ public class NodeDataDisplay : MonoBehaviour {
 			//Below line for testing only, remove later
 			hasTherm = false;
 		}
-
+        print(CurrentNodeObject.name);
 	}
 
-	void setGameObject(GameObject newNodeObject){
-		CurrentNodeObject = newNodeObject;
+	public void setGameObject(string newNodeId){
+		CurrentNodeObject = GameObject.Find(newNodeId);
 	}
 }
