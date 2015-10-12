@@ -5,6 +5,7 @@
 
 ------------------------------------------------------------------------------
 */
+
 using UnityEngine;
 using System.Collections;
 using MongoDB.Bson;
@@ -15,7 +16,7 @@ public class Node : MonoBehaviour
     private sensorData nodeSensor;	//allowing nodes to have sensor data
 	private int timeStamp{ get; set; }
     private MongoDBServer myServer;
-    public GameObject thisNode;
+    public GameObject thisNodeObject;
    
 
 	//accessor methods -------------
@@ -28,6 +29,7 @@ public class Node : MonoBehaviour
 	public void setTimeStamp(int time){
 		timeStamp = time;
 	}
+    //points to the node sensor data
 	public sensorData pointToSensor(){
 		return nodeSensor;
 	}
@@ -37,7 +39,8 @@ public class Node : MonoBehaviour
 	public Node (string name)
 	{
 		nodeName = name;
-        Instantiate(thisNode);
+        GameObject thisNodeObject = GetComponentInParent<GameObject>(); // May use this instead of assignment
+        Instantiate(thisNodeObject);
 	}
 
 	//setup
@@ -51,11 +54,8 @@ public class Node : MonoBehaviour
 
 	}
 	void FixedUpdate(){
-        if(myServer.nodePermissionToSelfUpdate)
+        if(myServer.nodePermissionToSelfUpdate && !myServer.noData)
 		    myServer.updateNode(this);
 	}
-
-
-
 }
 

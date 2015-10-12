@@ -6,7 +6,7 @@
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
 	<RootNamespace></RootNamespace>
-	<ProjectGuid>{37206EF0-6F23-140B-9885-201BF1026FD5}</ProjectGuid>
+	<ProjectGuid>{D0456EBE-61FC-963C-DE5A-2676F5137F7D}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<AssemblyName>Assembly-CSharp</AssemblyName>
@@ -45,10 +45,17 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\DataSetTesting.cs" />
+     <Compile Include="Assets\Scripts\DynamicTyping.cs" />
      <Compile Include="Assets\Scripts\MongoDBServer.cs" />
      <Compile Include="Assets\Scripts\Node.cs" />
+     <Compile Include="Assets\Scripts\NodeDataDisplay.cs" />
+     <Compile Include="Assets\Scripts\OnMouseDebug.cs" />
      <Compile Include="Assets\Scripts\RotateNode.cs" />
+     <Compile Include="Assets\Scripts\SendDataToDisplay.cs" />
      <Compile Include="Assets\Scripts\sensorData.cs" />
+     <None Include="Assets\Shaders\3DText.shader.shader" />
+     <None Include="Assets\Shaders\3DTextOneSided.shader.shader" />
      <None Include="Assets\CSharpDriver-1.7.0.4714\License.txt" />
      <None Include="Assets\CSharpDriver-1.7.0.4714\MongoDB.Bson.xml" />
      <None Include="Assets\Scripts\ClassDiagram1.cd" />
@@ -67,10 +74,10 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="MongoDB.Bson">
- <HintPath>C:/Users/johnmccormack2307/Documents/MeshMapper/Assets/CSharpDriver-1.7.0.4714/MongoDB.Bson.dll</HintPath>
+ <HintPath>C:/Users/johnmccormack2307/Documents/Assets/CSharpDriver-1.7.0.4714/MongoDB.Bson.dll</HintPath>
  </Reference>
  <Reference Include="MongoDB.Driver">
- <HintPath>C:/Users/johnmccormack2307/Documents/MeshMapper/Assets/CSharpDriver-1.7.0.4714/MongoDB.Driver.dll</HintPath>
+ <HintPath>C:/Users/johnmccormack2307/Documents/Assets/CSharpDriver-1.7.0.4714/MongoDB.Driver.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>

@@ -34,39 +34,44 @@ public class MongoDBServer : MonoBehaviour {
 	public string host = "localhost";			// string to pass for the server host
 	public string localhost = "localhost";		// string to pass for a local host
 	public int port = 27017;					// port # of server
+    public bool noData = true;
 
 
 	// Use this for initialization
 	void Start () {
 		nodes = new ArrayList();	//create new list of nodes
+        if (!noData)
+        {
+            if (isClient)
+            {
 
-		if (isClient) {
+                // Create client settings to pass connection string, timeout, etc.
+                clientSettings = new MongoClientSettings();
+                clientSettings.Server = new MongoServerAddress(localhost, port);
 
-			// Create client settings to pass connection string, timeout, etc.
-			clientSettings = new MongoClientSettings();
-			clientSettings.Server = new MongoServerAddress(localhost,port);
+                //create client part
+                _client = new MongoClient(clientSettings);
 
-		    //create client part
-			_client = new MongoClient(clientSettings);
-
-			//Create server object to communicate with server
-			//server = new MongoServer(clientSettings);
-
-
-		}
-
-		else {
-			// Create server settings to pass connection string, timeout, etc.
-			settings = new MongoServerSettings ();
-			settings.Server = new MongoServerAddress (host, port);
-
-			// Create server object to communicate with our server
-			server = new MongoServer (settings);
+                //Create server object to communicate with server
+                //server = new MongoServer(clientSettings);
 
 
-		}
-		//grab desired database from server
-		_database = server.GetDatabase ("sensornetwork");
+            }
+
+            else
+            {
+                // Create server settings to pass connection string, timeout, etc.
+                settings = new MongoServerSettings();
+                settings.Server = new MongoServerAddress(host, port);
+
+                // Create server object to communicate with our server
+                server = new MongoServer(settings);
+
+
+            }
+            //grab desired database from server
+            _database = server.GetDatabase("sensornetwork");
+        }
 
 	}
 
@@ -111,7 +116,7 @@ public class MongoDBServer : MonoBehaviour {
 	// Fixed Update is called once per per specific amount of time, this is handled in Edit > project settings> time
 	void FixedUpdate () 
 	{
-        if(!nodePermissionToSelfUpdate)
+        if(!nodePermissionToSelfUpdate && !noData)
 		    updateNodesFromServer (); // our main looping method
 	}
 
