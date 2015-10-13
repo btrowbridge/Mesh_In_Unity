@@ -49,23 +49,20 @@ public class NodeDataDisplay : MonoBehaviour {
         Logos = new Dictionary<string, Material>();
         Logos.Add ("compass", CompassTex);
 		Logos.Add ("thermometer", ThermTex);
+        cycle = 0;
 
 	}
 	
 	// Update is called once per frame
-	void Update () {;
+	void FixedUpdate () {;
         if (CurrentNodeObject)
         {
             if (hasCompass == true)
             {
                 smartTextMesh.UnwrappedText = "Compass Heading=\n" + compass.ToString() + "\nDegrees";
                 smartTextMesh.NeedsLayout = true;
-                //Logos.TryGetValue("compass", out material);
-                material = Logos["compass"];
-                LogoBox.GetComponent<MeshRenderer>().sharedMaterial = material;
-                //Below line for testing only, remove later
-                print(compass.ToString());
-                //hasCompass = false;
+                Logos.TryGetValue("compass", out material);
+                LogoBox.GetComponent<MeshRenderer>().material = material;
             }
 
             if (hasTherm == true)
@@ -73,20 +70,14 @@ public class NodeDataDisplay : MonoBehaviour {
                 smartTextMesh.UnwrappedText = "Temp =\n" + temp.ToString() + "\nDegrees C";
                 smartTextMesh.NeedsLayout = true;
                 Logos.TryGetValue("thermometer", out material);
-                print(material.ToString());
                 LogoBox.GetComponent<MeshRenderer>().material = material;
-                //Below line for testing only, remove later
-                //hasTherm = false;
-                print(temp.ToString());
             }
         }
 
 	}
 
 	public void setGameObject(string newNodeName){
-        print("MSG Rec");
 		CurrentNodeObject = GameObject.Find(newNodeName);
-        print(CurrentNodeObject.name.ToString());
 
         //DummyData 
         compass = CurrentNodeObject.GetComponent<DummyData>().compass;

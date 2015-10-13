@@ -50,80 +50,39 @@
      <Compile Include="Assets\LeapMotion\Editor\HandControllerEditor.cs" />
      <Compile Include="Assets\LeapMotion\Editor\LeapImageBasedMaterialEditor.cs" />
      <Compile Include="Assets\LeapMotion\Editor\LeapImageRetrieverEditor.cs" />
-     <Compile Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\Editor\StopPlayingOnRecompile.cs" />
-     <Compile Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\LeapMotion\Editor\HandControllerEditor.cs" />
-     <Compile Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\LeapMotion\Editor\LeapImageRetrieverEditor.cs" />
-     <Compile Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\OVR\Editor\OVRBuild.cs" />
-     <Compile Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\OVR\Editor\OVRGameView.cs" />
-     <Compile Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\OVR\Editor\OVRPrefabs.cs" />
-     <Compile Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\OVR\Editor\OVRShimLoader.cs" />
      <Compile Include="Assets\LeapMotionVR\Scripts\ConfigurationManager\Editor\HMRConfigurationManagerEditor.cs" />
      <Compile Include="Assets\LeapMotionVR\Scripts\Editor\LeapCameraAlignmentEditor.cs" />
      <Compile Include="Assets\OVR\Moonlight\Editor\OVRMoonlightLoader.cs" />
-     <None Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\LeapMotion\Resources\LeapCG.cginc" />
      <None Include="Assets\Plugins\donotdelete.txt" />
      <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\LeapMotion\Resources\LeapCG.cginc" />
      <None Include="Assets\Plugins\Android\assets\donotdelete.txt" />
      <None Include="Assets\LeapMotion\README_BEFORE_UPDATING.txt" />
-     <None Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\Plugins\donotdelete.txt" />
-     <None Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\Shaders\WaterBlurFinal.shader" />
-     <None Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\_VideoTexturePro_README.txt" />
-     <None Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\LeapMotion\Materials\Sources\Shaders\Toony-Basic.shader" />
-     <None Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\Fonts\Open_Sans\LICENSE.txt" />
-     <None Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\LeapMotion\Dependencies.txt" />
      <None Include="Assets\Plugins\x86_64\donotdelete.txt" />
      <None Include="Assets\Shaders\3DText.shader.shader" />
-     <None Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\LeapMotion\DemoResources\ScrollerText.txt" />
      <None Include="Assets\LeapMotion\DemoResources\ScrollerText.txt" />
      <None Include="Assets\LeapMotion\readme.txt" />
      <None Include="Assets\OVR\Moonlight\Shaders\OVRColorRampAlpha.shader" />
      <None Include="Assets\LeapMotion\Resources\ImageHandHighlight.shader" />
-     <None Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\LeapMotion\Shaders\RimShading.shader" />
-     <None Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\Plugins\x86\donotdelete.txt" />
-     <None Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\LeapMotion\Materials\Sources\Shaders\Toony-LightedOutline.shader" />
-     <None Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\OVR\Shaders\TextShader3D.shader" />
-     <None Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\LeapMotion\Widgets\Shaders\SelfIllumAlpha.shader" />
-     <None Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\LeapMotion\Resources\ThresholdOverlay.shader" />
      <None Include="Assets\LeapMotion\Shaders\RimShading.shader" />
-     <None Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\Shaders\WaterBlurModified.shader" />
      <None Include="Assets\LeapMotion\Dependencies.txt" />
-     <None Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\ArmHUD\Shaders\SelfIllumAlpha.shader" />
      <None Include="Assets\Shaders\3DTextOneSided.shader.shader" />
      <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-BasicOutline.shader" />
      <None Include="Assets\OVR\Moonlight\Shaders\Unlit Crosshair.shader" />
-     <None Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\LeapMotion\Version.txt" />
      <None Include="Assets\LeapMotion\Resources\ThresholdOverlay.shader" />
      <None Include="Assets\OVR\Moonlight\Resources\Unlit Transparent Color.shader" />
-     <None Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\Plugins\x86_64\donotdelete.txt" />
-     <None Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\LeapMotion\Materials\Sources\Shaders\Toony-Lighted.shader" />
      <None Include="Assets\LeapMotion\Resources\PassthroughForeground.shader" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
-     <None Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\ProjectSettings\ProjectVersion.txt" />
      <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-LightedOutline.shader" />
      <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-Lighted.shader" />
      <None Include="Assets\LeapMotion\Resources\PassthroughBackground.shader" />
      <None Include="Assets\LeapMotion\Widgets\Shaders\SelfIllumAlpha.shader" />
-     <None Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\Shaders\LineShader.shader" />
      <None Include="Assets\Scripts\ClassDiagram1.cd" />
-     <None Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\Shaders\StarShader.shader" />
-     <None Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\LeapMotion\readme.txt" />
-     <None Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\LeapMotion\README_BEFORE_UPDATING.txt" />
      <None Include="Assets\LeapMotion\Version.txt" />
-     <None Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\OVR\Shaders\OVRGUIShader.shader" />
-     <None Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\LeapMotion\Resources\PassthroughBackground.shader" />
      <None Include="Assets\Plugins\x86\donotdelete.txt" />
-     <None Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\LeapMotion\Resources\ImageHandHighlight.shader" />
      <None Include="Assets\3oA3B3H2 (2)\MongoDB.Bson.xml" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
      <None Include="Assets\Objects\Materials\Materials\Glass_VTC.shader" />
-     <None Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\Shaders\RimShader.shader" />
-     <None Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\LeapMotion\Resources\PassthroughForeground.shader" />
-     <None Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\Plugins\SystemWipeRecognizerDll.bundle\Contents\MacOS\version.txt" />
-     <None Include="Assets\LeapMotion\VR-Planetarium\VR-Planetarium\Assets\LeapMotion\Materials\Sources\Shaders\Toony-BasicOutline.shader" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
@@ -139,23 +98,11 @@
  <Reference Include="UnityEditor.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
- </Reference>
  <Reference Include="MongoDB.Bson">
  <HintPath>C:/Users/johnmccormack2307/Documents/Folder/Assets/3oA3B3H2 (2)/MongoDB.Bson.dll</HintPath>
  </Reference>
  <Reference Include="MongoDB.Driver">
  <HintPath>C:/Users/johnmccormack2307/Documents/Folder/Assets/3oA3B3H2 (2)/MongoDB.Driver.dll</HintPath>
- </Reference>
- <Reference Include="AssetStoreTools">
- <HintPath>C:/Users/johnmccormack2307/Documents/Folder/Assets/LeapMotion/VR-Planetarium/VR-Planetarium/Assets/AssetStoreTools/Editor/AssetStoreTools.dll</HintPath>
- </Reference>
- <Reference Include="AssetStoreToolsExtra">
- <HintPath>C:/Users/johnmccormack2307/Documents/Folder/Assets/LeapMotion/VR-Planetarium/VR-Planetarium/Assets/AssetStoreTools/Editor/AssetStoreToolsExtra.dll</HintPath>
- </Reference>
- <Reference Include="LeapCSharp.NET3.5">
- <HintPath>C:/Users/johnmccormack2307/Documents/Folder/Assets/LeapMotion/VR-Planetarium/VR-Planetarium/Assets/Plugins/LeapCSharp.NET3.5.dll</HintPath>
  </Reference>
  <Reference Include="LeapCSharp.NET3.5">
  <HintPath>C:/Users/johnmccormack2307/Documents/Folder/Assets/Plugins/LeapCSharp.NET3.5.dll</HintPath>
@@ -203,6 +150,8 @@
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{665E8E74-7612-29C1-CB78-13789555B1E6}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{7AC65C07-A5F3-9B73-58CB-422339A544C8}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
