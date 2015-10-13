@@ -39,7 +39,7 @@ public class Node : MonoBehaviour
 	public Node (string name)
 	{
 		nodeName = name;
-        GameObject thisNodeObject = GetComponentInParent<GameObject>(); // May use this instead of assignment
+        GameObject thisNodeObject = GetComponent<GameObject>(); // May use this instead of assignment
         Instantiate(thisNodeObject);
 	}
 

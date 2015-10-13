@@ -6,7 +6,7 @@
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
 	<RootNamespace></RootNamespace>
-	<ProjectGuid>{D0456EBE-61FC-963C-DE5A-2676F5137F7D}</ProjectGuid>
+	<ProjectGuid>{28D6CAF5-C4BF-C25F-F5FC-CFA8253703C5}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,28 +56,20 @@
      <Compile Include="Assets\Scripts\sensorData.cs" />
      <None Include="Assets\Shaders\3DText.shader.shader" />
      <None Include="Assets\Shaders\3DTextOneSided.shader.shader" />
-     <None Include="Assets\CSharpDriver-1.7.0.4714\License.txt" />
-     <None Include="Assets\CSharpDriver-1.7.0.4714\MongoDB.Bson.xml" />
      <None Include="Assets\Scripts\ClassDiagram1.cd" />
-     <None Include="Assets\CSharpDriver-1.7.0.4714\Release Notes v1.7.txt" />
+     <None Include="Assets\3oA3B3H2 (2)\MongoDB.Bson.xml" />
      <None Include="Assets\Objects\Materials\Materials\Glass_VTC.shader" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
- </Reference>
  <Reference Include="MongoDB.Bson">
- <HintPath>C:/Users/johnmccormack2307/Documents/Assets/CSharpDriver-1.7.0.4714/MongoDB.Bson.dll</HintPath>
+ <HintPath>C:/Users/randallmaden1497/Desktop/Mesh_In_Unity/Assets/3oA3B3H2 (2)/MongoDB.Bson.dll</HintPath>
  </Reference>
  <Reference Include="MongoDB.Driver">
- <HintPath>C:/Users/johnmccormack2307/Documents/Assets/CSharpDriver-1.7.0.4714/MongoDB.Driver.dll</HintPath>
+ <HintPath>C:/Users/randallmaden1497/Desktop/Mesh_In_Unity/Assets/3oA3B3H2 (2)/MongoDB.Driver.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
