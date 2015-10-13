@@ -25,7 +25,6 @@ public class SendDataToDisplay : MonoBehaviour {
 	 */
     void OnMouseDown()
     {
-        print("Click");
         string objectID = name;
         display.setGameObject(objectID);
     }
