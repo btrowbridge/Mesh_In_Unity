@@ -1,10 +1,11 @@
 fileFormatVersion: 2
 guid: e53baac80f6c9244ea1dc0161f787808
-timeCreated: 1443457144
+timeCreated: 1444694982
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - thisNodeObject: {fileID: 171240, guid: 8f3cd8e109cb9b14babf024cabab342b, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

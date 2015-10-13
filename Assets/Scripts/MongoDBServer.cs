@@ -36,10 +36,12 @@ public class MongoDBServer : MonoBehaviour {
 	public int port = 27017;					// port # of server
     public bool noData = true;
 
+    private static System.DateTime epoch = new DateTime(1970, 1, 1, 0, 0, 0, 0, System.DateTimeKind.Utc);
+
 
 	// Use this for initialization
 	void Start () {
-        Console.Write("Start");
+        UnityEngine.Debug.Log("Start");
 		nodes = new ArrayList();	//create new list of nodes
         if (!noData)
         {
@@ -61,19 +63,19 @@ public class MongoDBServer : MonoBehaviour {
 
             else
             {
-                Console.Write("Server mode");
+                UnityEngine.Debug.Log("Server mode");
                 // Create server settings to pass connection string, timeout, etc.
                 settings = new MongoServerSettings();
-                Console.Write("Server settings");
+                UnityEngine.Debug.Log("Server settings");
                 settings.Server = new MongoServerAddress(host, port);
                 
                 // Create server object to communicate with our server
                 server = new MongoServer(settings);
-                Console.Write("Connected");
+                UnityEngine.Debug.Log("Connected");
 
             }
             //grab desired database from server
-            Console.Write("Getting Database");
+            UnityEngine.Debug.Log("Getting Database");
             _database = server.GetDatabase("sensornetwork");
         }
 
@@ -82,7 +84,7 @@ public class MongoDBServer : MonoBehaviour {
 	//adds nod to a list of nodes
 	public void addNodeToList(Node node)
 	{
-        Console.Write(node.name + "Added to list.");
+        UnityEngine.Debug.Log(node.name + "Added to list.");
 		nodes.Add (node);
 	}
 	
@@ -94,9 +96,10 @@ public class MongoDBServer : MonoBehaviour {
 		//get collection from server
 		var collection = _database.GetCollection<BsonDocument> ("sensordata");
 
-		//for delayed timestamp
-		int timeStamp =  (int)Stopwatch.GetTimestamp();
-		string delayedTime = (timeStamp - delay).ToString (); 
+        //for delayed timestamp
+        //int timeStamp =  (int)Stopwatch.GetTimestamp();
+        int timeStamp = (int)(System.DateTime.UtcNow - epoch).TotalSeconds;
+		var delayedTime = (timeStamp - delay); 
 
 		//Query specific node name at a delayed time
 		var query = Query.And (
@@ -115,7 +118,7 @@ public class MongoDBServer : MonoBehaviour {
 
 	//method that updates a node after the data has already been queried
 	void updateNodeByResult(Node node, BsonDocument result){
-        Console.Write(node.name + "found, updating...");
+        UnityEngine.Debug.Log(node.name + "found, updating...");
 		node.pointToSensor ().parseBsonToSensorData (result);
 	}
 
@@ -130,23 +133,23 @@ public class MongoDBServer : MonoBehaviour {
 	//method handling
 	void updateNodesFromServer(){
 
-        Console.Write("Updating nodes from server end....");
+        UnityEngine.Debug.Log("Updating nodes from server end....");
 		//get DB from server
 		var _database = server.GetDatabase ("sensornetwork");
 		//get collection from server
 		var collection = _database.GetCollection<BsonDocument> ("sensordata");
 
 		//look for Bsondocument with old timestamp
-		int timeStamp = (int)Stopwatch.GetTimestamp ();
-		string delayedTime = (timeStamp - delay).ToString ();
+		int timeStamp = (int)(System.DateTime.UtcNow - epoch).TotalSeconds;
+        var delayedTime = (timeStamp - delay);
 
-        Console.Write("Querying...");
+        UnityEngine.Debug.Log("Querying...");
         //query for a specific delayed time
         var query = Query.EQ ("timestamp", delayedTime);
 
 		//convert results to a list of bson objects
 		var result = collection.Find (query).ToList<BsonDocument> ();
-        Console.Write("Bson collected");
+        UnityEngine.Debug.Log("Bson collected");
 
         bool isNewNode;									//token to see if the data is a new node
 		//process each piece of data collected
