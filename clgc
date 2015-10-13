@@ -1,0 +1,195 @@
+[33mcommit 3cad91ab9df28363b411d9da82278780ec38841e[m
+Merge: db0d4dc 49ee78a
+Author: John McCormack <mccormack.wgsi@gmail.com>
+Date:   Tue Oct 13 15:44:00 2015 -0400
+
+    Merge branch 'master' of https://github.com/jmccormack200/Mesh_In_Unity
+
+[33mcommit db0d4dc152093aa8027fb2100f0d5889be781612[m
+Author: John McCormack <mccormack.wgsi@gmail.com>
+Date:   Tue Oct 13 15:42:02 2015 -0400
+
+    The Prefab nodes can now send dummy data, which is dispalyed on the screen in the node prototyping room
+
+[33mcommit 49ee78a70bc5d3c8088967c3248520911c1fe163[m
+Merge: c2e6fc0 422fe7e
+Author: John McCormack <mccormack.wgsi@gmail.com>
+Date:   Tue Oct 13 11:43:59 2015 -0400
+
+    Merge pull request #1 from btrowbridge/master
+    
+    Merging Brad's work with mine.
+
+[33mcommit 422fe7e188326e24128085648f0b970de08dde5e[m
+Author: Cody Maden <signedlongint@gmail.com>
+Date:   Mon Oct 12 20:48:12 2015 -0400
+
+    fixed timestamp type
+
+[33mcommit 3181e3cb90d59a00b82bf80e9efabc6fd27af81d[m
+Author: unknown <bradleytrowbridge06@PC-MJ0169R0.floridapoly.org>
+Date:   Mon Oct 12 19:49:56 2015 -0400
+
+    New driver used due to recursion error. New debug prints along the way.
+
+[33mcommit 55d394d33dae34a95234465d5081d437489703e6[m
+Merge: a80531b c2e6fc0
+Author: Bradley Trowbridge <bradley.trowbridge@yahoo.com>
+Date:   Mon Oct 12 15:12:12 2015 -0400
+
+    Merge pull request #2 from jmccormack200/master
+    
+    Added a New Scene
+
+[33mcommit c2e6fc0407d7795528f090c600286072eb609191[m
+Author: John McCormack <mccormack.wgsi@gmail.com>
+Date:   Wed Oct 7 21:32:20 2015 -0400
+
+    Switched to using the body as the base of the node object instead of using the empty game object
+
+[33mcommit bc00363c96bc77782f6c5ba720733626f17f299b[m
+Author: John McCormack <mccormack.wgsi@gmail.com>
+Date:   Wed Oct 7 21:29:30 2015 -0400
+
+    now able to send the node_body to the other game object
+
+[33mcommit 3dbbd23a3fe11c089e5d0292f155a142495dba9b[m
+Author: John McCormack <mccormack.wgsi@gmail.com>
+Date:   Wed Oct 7 20:29:01 2015 -0400
+
+    Stopping for a bit to get Brad coffee
+
+[33mcommit 5388d9d53d1204ea389c08c76a550fada4e6aac9[m
+Author: John McCormack <mccormack.wgsi@gmail.com>
+Date:   Wed Oct 7 16:57:16 2015 -0400
+
+    Brad finished revamping his code
+
+[33mcommit 3c0737f00f6108073212212f83c385fe482de7c6[m
+Author: John McCormack <mccormack.wgsi@gmail.com>
+Date:   Wed Oct 7 09:32:55 2015 -0400
+
+    Made a little progress before the start of the conference, but need to still set up the data transmission
+
+[33mcommit ee892fd07c00abae22ef962341db375d50667073[m
+Author: John McCormack <mccormack.wgsi@gmail.com>
+Date:   Tue Oct 6 18:12:11 2015 -0400
+
+    Haven't made significant progress, but starting to work on a way for the nodes to store their data, and then regularly update the display if they are chosen
+
+[33mcommit ae223af49dcb9e3663411602cd27ad1825b6b2d5[m
+Author: John McCormack <mccormack.wgsi@gmail.com>
+Date:   Sun Oct 4 22:32:04 2015 -0400
+
+    switched to a texture dictionary
+
+[33mcommit a80531b7cf349a3d82452d50949bb7a2baff5de3[m
+Merge: 3ad8e0e 6b84854
+Author: Bradley Trowbridge <bradley.trowbridge@yahoo.com>
+Date:   Sun Oct 4 18:04:52 2015 -0400
+
+    Merge pull request #1 from jmccormack200/master
+    
+    Merging Work I have been doing on the scene with the backend that you have created
+
+[33mcommit db70cebbc8a6355e0cb766c06c11f7289b89a9ed[m
+Author: John McCormack <mccormack.wgsi@gmail.com>
+Date:   Sat Oct 3 22:44:15 2015 -0400
+
+    Finished for the night, now understanding how to print compass stuff
+
+[33mcommit a81084076e5e63c90abccfeb79b06b98ea755a23[m
+Author: John McCormack <mccormack.wgsi@gmail.com>
+Date:   Sat Oct 3 19:11:00 2015 -0400
+
+    Saving before Dinner
+
+[33mcommit a4134a5a7bca7622c8566431eccd801ea653ae81[m
+Author: John McCormack <mccormack.wgsi@gmail.com>
+Date:   Sat Oct 3 17:53:34 2015 -0400
+
+    changed some text
+
+[33mcommit a9dd25c6ba7be0dea5fd965a6bb5d90e0daca799[m
+Author: John McCormack <mccormack.wgsi@gmail.com>
+Date:   Sat Oct 3 17:43:21 2015 -0400
+
+    Got the Texture Renderer to Work, now need to work on the text itself
+
+[33mcommit 4c6dd6c186430212f0cad19ba384c1cb8adb0bde[m
+Author: John McCormack <mccormack.wgsi@gmail.com>
+Date:   Sat Oct 3 17:03:29 2015 -0400
+
+    Saving for now, just discovered render to texture and will be switching to that
+
+[33mcommit 01a367bd3f4259e79e72d6a051f40a3393679137[m
+Author: John McCormack <mccormack.wgsi@gmail.com>
+Date:   Sat Oct 3 16:34:09 2015 -0400
+
+    Starting to work on animating the Text to display node data
+
+[33mcommit 73311b7cd163267926c0c07342f9eb2830ecc9b7[m
+Author: John McCormack <mccormack.wgsi@gmail.com>
+Date:   Sat Oct 3 14:09:08 2015 -0400
+
+    Started working on the makerspace
+
+[33mcommit 6b84854ca382f40471c114eddc2d0f173e408f27[m
+Author: John McCormack <mccormack.wgsi@gmail.com>
+Date:   Sat Oct 3 00:01:08 2015 -0400
+
+    Finished for the Night
+
+[33mcommit b5d30df2e9131a446ab1b759dad00b5be7d7efef[m
+Author: John McCormack <mccormack.wgsi@gmail.com>
+Date:   Fri Oct 2 22:36:22 2015 -0400
+
+    Finished the Logo for the Mesh Nodes
+
+[33mcommit c9d4948624729730c8ad449d83ac015befc9a106[m
+Author: John McCormack <mccormack.wgsi@gmail.com>
+Date:   Fri Oct 2 21:42:06 2015 -0400
+
+    creating node
+
+[33mcommit 29773b34d3fb23736213d45b7a4c61a452f49d20[m
+Author: John McCormack <mccormack.wgsi@gmail.com>
+Date:   Fri Oct 2 20:39:55 2015 -0400
+
+    Finished Furniture in VTC, need laptops/equipment
+
+[33mcommit 9f8f977fe2edab913f052f2cf42283f9ee5b971c[m
+Author: John McCormack <mccormack.wgsi@gmail.com>
+Date:   Fri Oct 2 19:44:38 2015 -0400
+
+    Breaking for a bit
+
+[33mcommit 61825822acec8093418bf5984e122c0f8508d577[m
+Author: John McCormack <mccormack.wgsi@gmail.com>
+Date:   Fri Oct 2 19:05:08 2015 -0400
+
+    Finished Super Computer
+
+[33mcommit 48b1a67daab99c5debc5641913d263d577a6a130[m
+Author: John McCormack <mccormack.wgsi@gmail.com>
+Date:   Fri Oct 2 18:45:29 2015 -0400
+
+    Started Creating the Scene
+
+[33mcommit 3ad8e0e810f29bd0767dbfd31345ea2e45ba3157[m
+Author: unknown <bradleytrowbridge06@PC-MJ0169QK.floridapoly.org>
+Date:   Thu Oct 1 22:37:59 2015 -0400
+
+    Objects will instantiate in the scene. New option where the editor can choose to either update systematically from a list of nodes on the server or give the nodes permission to update themselves.
+
+[33mcommit 0e1f3ec6492a37004253e41845d5c3e308a4a1a8[m
+Author: btrowbridge <bradley.trowbridge@yahoo.com>
+Date:   Tue Sep 29 22:58:51 2015 -0400
+
+    Zero errors waiting to be tested. New features can also be implemented. Backend only
+
+[33mcommit 888eade18e69ab2a4e825c37183a3e596bc6532f[m
+Author: btrowbridge <bradley.trowbridge@yahoo.com>
+Date:   Mon Sep 28 20:06:25 2015 -0400
+
+    There are data membors for the sensor data and a node to MongoDB relationship set up, there is issues with one line of code with type errors. will look for answers later
