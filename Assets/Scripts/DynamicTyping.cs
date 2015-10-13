@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 
 public class DynamicTyping : MonoBehaviour {
-    private TextMesh instruction;
+    private TextMesh DisplayText;
     public string write_this;
     public int col = 12;
     public int row = 6; 
@@ -21,7 +21,7 @@ public class DynamicTyping : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        instruction = GetComponent<TextMesh>();
+        DisplayText = GetComponent<TextMesh>();
         current_position = 0;
         final_position = write_this.Length;
         
@@ -38,13 +38,13 @@ public class DynamicTyping : MonoBehaviour {
                 if (current_row == row)
                 {
                     current_row = 0;
-                    instruction.text = "";
+                    DisplayText.text = "";
                 } else
                 {
-                    instruction.text = instruction.text + "\n";
+                    DisplayText.text = DisplayText.text + "\n";
                 }
             }
-            instruction.text = instruction.text + write_this[current_position];
+            DisplayText.text = DisplayText.text + write_this[current_position];
             current_position++;
             current_col++;
         }
