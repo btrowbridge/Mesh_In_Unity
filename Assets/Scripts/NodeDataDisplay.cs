@@ -94,8 +94,17 @@ public class NodeDataDisplay : MonoBehaviour {
     }
 
 	public void setGameObject(string newNodeName){
-		CurrentNodeObject = GameObject.Find(newNodeName);
+        try
+        {
+            CurrentNodeObject.GetComponent<MeshRenderer>().material = DeActivatedNode;
+        }
+        catch
+        {
 
+        }
+
+        CurrentNodeObject = GameObject.Find(newNodeName);
+        CurrentNodeObject.GetComponent<MeshRenderer>().material = ActivatedNode;
         //DummyData 
         compass = CurrentNodeObject.GetComponent<DummyData>().compass;
         temp = CurrentNodeObject.GetComponent<DummyData>().temperature;
