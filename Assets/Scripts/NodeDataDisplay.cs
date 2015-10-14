@@ -38,6 +38,13 @@ public class NodeDataDisplay : MonoBehaviour {
 
     private SmartTextMesh smartTextMesh;
 
+    //Set Delay of Coroutine
+    public float delay = 2.0f;
+
+    //Materials
+    public Material ActivatedNode;
+    public Material DeActivatedNode;
+
     void Start () {
 
         smartTextMesh = GetComponentInChildren<SmartTextMesh>();
@@ -50,31 +57,41 @@ public class NodeDataDisplay : MonoBehaviour {
         Logos.Add ("compass", CompassTex);
 		Logos.Add ("thermometer", ThermTex);
         cycle = 0;
-
-	}
+        StartCoroutine("DisplayFeedLoop");
+    }
 	
 	// Update is called once per frame
-	void FixedUpdate () {;
-        if (CurrentNodeObject)
+	void FixedUpdate () {
+       
+    }
+
+    IEnumerator DisplayFeedLoop()
+    {
+        while (true)
         {
-            if (hasCompass == true)
+            if (CurrentNodeObject)
             {
-                smartTextMesh.UnwrappedText = "Compass Heading=\n" + compass.ToString() + "\nDegrees";
-                smartTextMesh.NeedsLayout = true;
-                Logos.TryGetValue("compass", out material);
-                LogoBox.GetComponent<MeshRenderer>().material = material;
-            }
+                if (hasCompass == true)
+                {
+                    smartTextMesh.UnwrappedText = "Compass Heading=\n" + compass.ToString() + "\nDegrees";
+                    smartTextMesh.NeedsLayout = true;
+                    Logos.TryGetValue("compass", out material);
+                    LogoBox.GetComponent<MeshRenderer>().material = material;
+                    yield return new WaitForSeconds(delay);
+                }
 
-            if (hasTherm == true)
-            {
-                smartTextMesh.UnwrappedText = "Temp =\n" + temp.ToString() + "\nDegrees C";
-                smartTextMesh.NeedsLayout = true;
-                Logos.TryGetValue("thermometer", out material);
-                LogoBox.GetComponent<MeshRenderer>().material = material;
+                if (hasTherm == true)
+                {
+                    smartTextMesh.UnwrappedText = "Temp =\n" + temp.ToString() + "\nDegrees C";
+                    smartTextMesh.NeedsLayout = true;
+                    Logos.TryGetValue("thermometer", out material);
+                    LogoBox.GetComponent<MeshRenderer>().material = material;
+                    yield return new WaitForSeconds(delay);
+                }
             }
+            yield return new WaitForSeconds(delay);
         }
-
-	}
+    }
 
 	public void setGameObject(string newNodeName){
 		CurrentNodeObject = GameObject.Find(newNodeName);
