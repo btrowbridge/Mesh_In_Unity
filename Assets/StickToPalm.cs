@@ -12,13 +12,14 @@ public class StickToPalm : MonoBehaviour {
 	void Start () {
         TV = GameObject.FindWithTag("Screen");
         TVposition0 = TV.transform;
-        TV.transform.rotation.SetEulerAngles(0, 90, 0);
-	}
+        
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
         TV.transform.position = this.transform.position;
-        TV.transform.rotation.y = this.transform.rotation.y + 90.0f;
+        TV.transform.rotation = this.transform.rotation;
 	}
 
     void OnDestroy() {
