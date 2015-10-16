@@ -183,6 +183,7 @@
      <Compile Include="Assets\Scripts\SendDataToDisplay.cs" />
      <Compile Include="Assets\Scripts\SmartTextMesh.cs" />
      <Compile Include="Assets\Scripts\sensorData.cs" />
+     <Compile Include="Assets\StickToPalm.cs" />
      <None Include="Assets\Plugins\donotdelete.txt" />
      <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\LeapMotion\Resources\LeapCG.cginc" />
