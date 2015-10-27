@@ -4,9 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using MongoDB.Bson;
+using SocketIO;
 
 [Serializable]
-public class sensorData
+public class sensorData :  SocketIOEvent
 {
 
     //sensor data members
