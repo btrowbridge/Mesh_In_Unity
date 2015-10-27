@@ -7,15 +7,13 @@ Notes: Th8ings noted as Mongo Server Approach are to be Changed or deleted since
 */
 
 using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
-using MongoDB.Bson;
 using SocketIO;
 
 public class Node : MonoBehaviour
 {
     private string nodeName { get { return nodeName; } set { nodeName = value; } }        //for identifying the server
-    private Dictionary<string, double> nodeData { get { return nodeData; } set { nodeData = value; } }   //allowing nodes to have sensor data
+    private Dictionary<string, string> nodeData { get { return nodeData; } set { nodeData = value; } }   //allowing nodes to have sensor data
     //socket Approach
     private SocketIOComponent socket;
     private Dictionary<string, string> query;
@@ -57,8 +55,17 @@ public class Node : MonoBehaviour
 	//setup
 	void Start(){
         //socket.io approach
+        //retrieve socket component
         GameObject go = GameObject.Find("SocketIO");
         socket = go.GetComponent<SocketIOComponent>();
+
+        socket.On("result", UpdateNode);  //event listener for query results
+
+        //create dictionary for nodeData
+        nodeData = new Dictionary<string, string>();
+
+        //create query based on the node's name
+        query = new Dictionary<string, string>();
         query["name"] = nodeName;
         
 
@@ -75,6 +82,7 @@ public class Node : MonoBehaviour
 
     }
 	void FixedUpdate(){
+        //on each fixed update emit the query for the latest node data
         socket.Emit("query", new JSONObject(query));
 
 
@@ -82,33 +90,42 @@ public class Node : MonoBehaviour
         /*Mongo Server Approach
         if(myServer.nodePermissionToSelfUpdate && !myServer.noData)
 		    myServer.updateNode(this);
-            */
+        */
 	}
+
+    //event handler for the json object
     public void UpdateNode(SocketIOEvent e)
-    {
-        if (e.name == nodeName)
+    {   
+        //if the result is correct
+        if (e.data["name"].ToString() == nodeName)
         {
+            //parse the data
             parseJson(e);
         }
     }
     public void parseJson(SocketIOEvent e) {
-        nodeData["compass"] = e.compass;
 
-        nodeData["magnometer.x"] = e.magnetometer.x;
-        nodeData["magnometer.y"] = e.magnetometer.y;
-        nodeData["magnometer.z"] = e.magnetometer.z;
+        nodeData = e.data.ToDictionary(); //apparently parsing is easy.....
 
-        nodeData["barometer.pressure"] = e.barometer.pressure;
-        nodeData["barometer.temperature"] = e.barometer.pressure
+        /*
+        extraneas structure for node data dictionary
+        nodeData["compass"] = e.data["nodeData.compass"].ToString();
 
-        nodeData["GPS.latitude.degrees"] = e.GPS.latitude.degrees;
-        nodeData["GPS.latitude.minutes"] = e.GPS.latitude.minutes;
-        nodeData["GPS.latitude.direction"] = e.GPS.latitude.direction;
+        nodeData["magnometer.x"] = e.data["magnetometer.x"].ToString();
+        nodeData["magnometer.y"] = e.data["magnetometer.y"].ToString();
+        nodeData["magnometer.z"] = e.data["magnetometer.z"].ToString();
 
-        nodeData["GPS.longitude.degrees"] = e.GPS.longitude.degrees;
-        nodeData["GPS.longitude.minutes"] = e.GPS.longitude.minutes;
-        nodeData["GPS.longitude.direction"] = e.GPS.longitude.direction;
+        nodeData["barometer.pressure"] = e.data["barometer.pressure"].ToString();
+        nodeData["barometer.temperature"] = e.data["barometer.pressure"].ToString();
 
+        nodeData["GPS.latitude.degrees"] = e.data["GPS.latitude.degrees"].ToString();
+        nodeData["GPS.latitude.minutes"] = e.data["GPS.latitude.minutes"].ToString();
+        nodeData["GPS.latitude.direction"] = e.data["GPS.latitude.direction"].ToString();
+
+        nodeData["GPS.longitude.degrees"] = e.data["GPS.longitude.degrees"].ToString();
+        nodeData["GPS.longitude.minutes"] = e.data["GPS.longitude.minutes"].ToString();
+        nodeData["GPS.longitude.direction"] = e.data["GPS.longitude.direction"].ToString();
+        */
 
 
     }

@@ -45,3 +45,6 @@ C:\Users\johnmccormack2307\Documents\Folder\Temp\bin\Debug\MongoDB.Driver.xml
 C:\Users\johnmccormack2307\Documents\Folder\obj\Debug\Assembly-CSharp-Editor.csprojResolveAssemblyReference.cache
 C:\Users\johnmccormack2307\Documents\Folder\obj\Debug\Assembly-CSharp-Editor.dll
 C:\Users\johnmccormack2307\Documents\Folder\obj\Debug\Assembly-CSharp-Editor.pdb
+C:\Users\bradleytrowbridge06\Desktop\Mesh_In_Unity\obj\Debug\Assembly-CSharp-Editor.csprojResolveAssemblyReference.cache
+C:\Users\bradleytrowbridge06\Desktop\Mesh_In_Unity\obj\Debug\Assembly-CSharp-Editor.dll
+C:\Users\bradleytrowbridge06\Desktop\Mesh_In_Unity\obj\Debug\Assembly-CSharp-Editor.pdb

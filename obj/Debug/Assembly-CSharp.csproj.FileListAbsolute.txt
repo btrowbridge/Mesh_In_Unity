@@ -52,10 +52,6 @@ C:\Users\johnmccormack2307\Documents\Temp\bin\Debug\MongoDB.Bson.pdb
 C:\Users\johnmccormack2307\Documents\Temp\bin\Debug\MongoDB.Bson.xml
 C:\Users\johnmccormack2307\Documents\Temp\bin\Debug\MongoDB.Driver.pdb
 C:\Users\johnmccormack2307\Documents\Temp\bin\Debug\MongoDB.Driver.xml
-C:\Users\bradleytrowbridge06\Desktop\Mesh_In_Unity\Temp\bin\Debug\UnityEngine.Advertisements.dll
-C:\Users\bradleytrowbridge06\Desktop\Mesh_In_Unity\Temp\bin\Debug\UnityEngine.Analytics.dll
-C:\Users\bradleytrowbridge06\Desktop\Mesh_In_Unity\Temp\bin\Debug\UnityEngine.Advertisements.xml
-C:\Users\bradleytrowbridge06\Desktop\Mesh_In_Unity\Temp\bin\Debug\UnityEngine.Analytics.xml
 C:\Users\randallmaden1497\Desktop\Mesh_In_Unity\Temp\bin\Debug\Assembly-CSharp.dll
 C:\Users\randallmaden1497\Desktop\Mesh_In_Unity\Temp\bin\Debug\Assembly-CSharp.pdb
 C:\Users\randallmaden1497\Desktop\Mesh_In_Unity\Temp\bin\Debug\MongoDB.Bson.dll
@@ -110,3 +106,5 @@ C:\Users\johnmccormack2307\Documents\Folder\Temp\bin\Debug\MongoDB.Driver.xml
 C:\Users\johnmccormack2307\Documents\Folder\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 C:\Users\johnmccormack2307\Documents\Folder\obj\Debug\Assembly-CSharp.dll
 C:\Users\johnmccormack2307\Documents\Folder\obj\Debug\Assembly-CSharp.pdb
+C:\Users\bradleytrowbridge06\Desktop\Mesh_In_Unity\Temp\bin\Debug\LeapCSharp.NET3.5.dll
+C:\Users\bradleytrowbridge06\Desktop\Mesh_In_Unity\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb

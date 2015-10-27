@@ -14,13 +14,13 @@ using System.Linq;
 using MongoDB.Driver;
 using MongoDB.Driver.Builders;
 using MongoDB.Bson;
-using System.Diagnostics;
+
 
 
 
 public class MongoDBServer : MonoBehaviour {
 
-
+    /*MongoServer Aopproach
 	private ArrayList nodes;								//list of nodes on server
 	protected static MongoServerSettings settings;			//for settings of server mode
 	protected static MongoServer server;					//server
@@ -176,7 +176,7 @@ public class MongoDBServer : MonoBehaviour {
 		}
 
 	}
-	
+	*/
 }
 
 

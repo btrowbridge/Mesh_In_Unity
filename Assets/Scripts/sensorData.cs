@@ -7,7 +7,7 @@ using MongoDB.Bson;
 using SocketIO;
 
 [Serializable]
-public class sensorData :  SocketIOEvent
+public class sensorData 
 {
 
     //sensor data members
