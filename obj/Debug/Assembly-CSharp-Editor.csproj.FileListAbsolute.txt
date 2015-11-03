@@ -92,3 +92,7 @@ C:\Users\bradleytrowbridge06\Desktop\Mesh_In_Unity\Temp\bin\Debug\UnityEngine.Ne
 C:\Users\bradleytrowbridge06\Desktop\Mesh_In_Unity\Temp\bin\Debug\UnityEditor.Networking.xml
 C:\Users\bradleytrowbridge06\Desktop\Mesh_In_Unity\Temp\bin\Debug\MongoDB.Bson.xml
 C:\Users\bradleytrowbridge06\Desktop\Mesh_In_Unity\Temp\bin\Debug\MongoDB.Driver.xml
+C:\Users\bradleytrowbridge06\Desktop\Mesh_In_Unity\Temp\bin\Debug\UnityEngine.Advertisements.dll
+C:\Users\bradleytrowbridge06\Desktop\Mesh_In_Unity\Temp\bin\Debug\UnityEngine.Analytics.dll
+C:\Users\bradleytrowbridge06\Desktop\Mesh_In_Unity\Temp\bin\Debug\UnityEngine.Advertisements.xml
+C:\Users\bradleytrowbridge06\Desktop\Mesh_In_Unity\Temp\bin\Debug\UnityEngine.Analytics.xml

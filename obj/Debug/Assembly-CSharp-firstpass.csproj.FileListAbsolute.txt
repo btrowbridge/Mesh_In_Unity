@@ -52,3 +52,7 @@ C:\Users\bradleytrowbridge06\Desktop\Mesh_In_Unity\Temp\bin\Debug\MongoDB.Driver
 C:\Users\bradleytrowbridge06\Desktop\Mesh_In_Unity\obj\Debug\Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
 C:\Users\bradleytrowbridge06\Desktop\Mesh_In_Unity\obj\Debug\Assembly-CSharp-firstpass.dll
 C:\Users\bradleytrowbridge06\Desktop\Mesh_In_Unity\obj\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\bradleytrowbridge06\Desktop\Mesh_In_Unity\Temp\bin\Debug\UnityEngine.Advertisements.dll
+C:\Users\bradleytrowbridge06\Desktop\Mesh_In_Unity\Temp\bin\Debug\UnityEngine.Analytics.dll
+C:\Users\bradleytrowbridge06\Desktop\Mesh_In_Unity\Temp\bin\Debug\UnityEngine.Advertisements.xml
+C:\Users\bradleytrowbridge06\Desktop\Mesh_In_Unity\Temp\bin\Debug\UnityEngine.Analytics.xml

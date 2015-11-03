@@ -18,7 +18,7 @@ public class ParticleBehavior : MonoBehaviour {
 
     //for easier editing of all emmitters
     public float startSpeed=1;           //speed of particles
-    public int numParticles = 10;        //num of particles at one time
+    public int numParticles = 40;        //num of particles at one time
     
 	// Use this for initialization
     //John is the illest - Brad
@@ -48,16 +48,15 @@ public class ParticleBehavior : MonoBehaviour {
     }
     void Update() {
         nodes = GameObject.FindGameObjectsWithTag("node");
+     
+        // random node from list
+        nodeObject = nodes[Random.Range(0,nodes.Length)];
+
         //calculate distance from eimission
         float distance = Vector3.Distance(gameObject.transform.position, nodeObject.transform.position);
 
         //lifetime particle depends on object they are looking at
         particleSystem.startLifetime = distance / particleSystem.startSpeed;
-
-
-        // random node from list
-        nodeObject = nodes[Random.Range(0,nodes.Length)];
-        
 
         //makes sure the emmitter faces node
         transform.LookAt(nodeObject.transform);
